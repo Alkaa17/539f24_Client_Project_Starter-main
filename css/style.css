@@ -135,6 +135,9 @@ a:link {
 footer a:link {
   color: #ffffff;
 }
+footer a:visited {
+  color: #ffcb05;
+}
 li {
   padding-bottom: 10px;
 }
