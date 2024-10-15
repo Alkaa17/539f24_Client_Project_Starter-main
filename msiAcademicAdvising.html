@@ -4,18 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MSI Academic Advising</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
     <header>
-      <a href="">Skip to Main Content</a>
+      <div class="skip">
+        <a href="#main" tabindex="0">Skip to Main Content</a>
+      </div>
       <img
-        src="images/UMSI_signature_vertical_informal_solidblue.jpg"
-        alt="UMSI Logo"
+        src="images/u-m_logo-horizontal-hex-reversed.png" alt=" UM Logo"
       />
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="msiAcademicAdvising.html">MSI Academic Advising</a></li>
+          <li class="target"><a href="msiAcademicAdvising.html">MSI Academic Advising</a></li>
           <li>
             <a href="maizeAndBlueCupboard.html">Maize & Blue Cupboard</a>
           </li>
@@ -26,16 +29,25 @@
           </li>
         </ul>
       </nav>
-      <h1>MSI Academic Advising</h1>
+      
     </header>
-    <main>
+    <main id="main" tabindex="-1">
+      <h1>MSI Academic Advising</h1>
       <p>
         Welcome! This site contains information about academic advising,
         academic planning, and student support resources for students in the
         Master of Science in Information (MSI) Program.
       </p>
+      <figure>
+        <img src="images/UMSI_MHIClassroom_02202023_16.jpg" alt="Advising team helping out the students." />
+      </figure>
       <section>
         <h2>Content Areas</h2>
+        <div class="leftimage">
+          <a href="https://www.cew.umich.edu/funding//">
+            <img src="images/calendar.png" alt="Important Dates" />
+          </a>
+        </div>
         <ul>
           <li>
             <a
@@ -77,12 +89,19 @@
       </section>
     </main>
     <footer>
-      <p>
-        MSI Academic Advising |
-        <a href="mailto:umsi.advising.msi@umich.edu"
-          >umsi.advising.msi@umich.edu
-        </a>
-      </p>
+      <img src="images/u-m_logo-horizontal-hex-reversed.png" alt=" UM Logo" />
+      <ul class="sl-links">
+        <li><a rel="noopener" href="https://studentlife.umich.edu/accessib">Web Accessibility Statement</a>
+        </li>
+        <li><a rel="noopener"
+            href="https://hr.umich.edu/working-u-m/workplace-improvement/office-institutional-equity/nondiscrimination-policy-notice">Non-Discrimination
+            Policy</a>
+        </li>
+        <li><a rel="noopener" href="https://umich.edu/">U–M Gateway</a>
+          <p></p>
+        </li>
+      </ul>
+      <p>© 2024 The Regents of the University of Michigan</p>
     </footer>
-  </body>
-</html>
+    </body>
+    </html>

@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Success Portal</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
     <header>
-      <a href="">Skip to Main Content</a>
+      <div class="skip">
+        <a href="#main" tabindex="0">Skip to Main Content</a>
+      </div>
       <img
-        src="images/UMSI_signature_vertical_informal_solidblue.jpg"
-        alt="UMSI Logo"
+        src="images/u-m_logo-horizontal-hex-reversed.png" alt=" UM Logo"
       />
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li class="target"><a href="index.html">Home</a></li>
           <li><a href="msiAcademicAdvising.html">MSI Academic Advising</a></li>
           <li>
             <a href="maizeAndBlueCupboard.html">Maize & Blue Cupboard</a>
@@ -26,9 +29,10 @@
           </li>
         </ul>
       </nav>
-      <h1>Student Success Portal</h1>
     </header>
-    <main>
+    <main id="main" tabindex="-1">
+      <div class="container">
+      <h1>Home</h1>
       <section>
         <h2>Welcome to the UM Grad Success Navigator</h2>
         <p>Your Comprehensive Guide to Resources for Graduate School Success</p>
@@ -162,15 +166,22 @@
       </section>
       <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
-    </main>
+    </div>
+  </main>
     <footer>
-      <p>
-        MSI Academic Advising |
-        <a
-          href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources"
-          >UMSI Academic Advising
-        </a>
-      </p>
+      <img src="images/u-m_logo-horizontal-hex-reversed.png" alt=" UM Logo" />
+      <ul class="sl-links">
+        <li><a rel="noopener" href="https://studentlife.umich.edu/accessib">Web Accessibility Statement</a>
+        </li>
+        <li><a rel="noopener"
+            href="https://hr.umich.edu/working-u-m/workplace-improvement/office-institutional-equity/nondiscrimination-policy-notice">Non-Discrimination
+            Policy</a>
+        </li>
+        <li><a rel="noopener" href="https://umich.edu/">U–M Gateway</a>
+          <p></p>
+        </li>
+      </ul>
+      <p>© 2024 The Regents of the University of Michigan</p>
     </footer>
   </body>
 </html>

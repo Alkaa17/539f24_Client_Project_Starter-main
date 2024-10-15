@@ -4,16 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
     <header>
-      <a href="">Skip to Main Content</a>
-      <img src="images/mbc-logo.jpg" alt="MBC Logo" />
+      <div class="skip">
+        <a href="#main" tabindex="0">Skip to Main Content</a>
+      </div>
+      <img src="images/u-m_logo-horizontal-hex-reversed.png" alt=" UM Logo"
+      />
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="msiAcademicAdvising.html">MSI Academic Advising</a></li>
-          <li>
+          <li class="target">
             <a href="maizeAndBlueCupboard.html">Maize & Blue Cupboard</a>
           </li>
           <li>
@@ -23,7 +28,12 @@
           </li>
         </ul>
       </nav>
+    </header>
+    <main id="main" tabindex="-1">
       <h1>WELCOME TO MAIZE & BLUE CUPBOARD</h1>
+      <figure>
+        <img src="images/footer-donate-image.webp" alt="Maize and Blue Cupboard" />
+      </figure>
       <h2>OUR MISSION</h2>
       <p>
         To ensure members of the University of Michigan community—whether on a
@@ -31,8 +41,6 @@
         store—receive equitable access to healthy, nutritious, and nourishing
         food and the ability to prepare it for themselves or others.
       </p>
-    </header>
-    <main>
       <section>
         <h2>MAKE AN APPOINTMENT NOW</h2>
         <p>
@@ -68,13 +76,20 @@
       </section>
     </main>
     <footer>
-      <p>
-        MSI Academic Advising |
-        <a
-          href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources"
-          >UMSI Academic Advising
-        </a>
-      </p>
+      <img src="images/u-m_logo-horizontal-hex-reversed.png" alt=" UM Logo" />
+      <ul class="sl-links">
+        <li><a rel="noopener" href="https://studentlife.umich.edu/accessib">Web Accessibility Statement</a>
+        </li>
+        <li><a rel="noopener"
+            href="https://hr.umich.edu/working-u-m/workplace-improvement/office-institutional-equity/nondiscrimination-policy-notice">Non-Discrimination
+            Policy</a>
+        </li>
+        <li><a rel="noopener" href="https://umich.edu/">U–M Gateway</a>
+          <p></p>
+        </li>
+      </ul>
+      <p>© 2024 The Regents of the University of Michigan</p>
     </footer>
-  </body>
-</html>
+    </body>
+    
+    </html>

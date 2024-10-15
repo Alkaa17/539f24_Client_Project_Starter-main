@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
     <header>
-      <a href="">Skip to Main Content</a>
+      <div class="skip">
+        <a href="#main" tabindex="0">Skip to Main Content</a>
+      </div>
       <img
-        src="images/mCenterForTheEducationOfWomen.jpg"
-        alt="Center For The Education Of Women Logo"
+        src="images/u-m_logo-horizontal-hex-reversed.png" alt=" UM Logo"
       />
       <nav>
         <ul>
@@ -19,19 +22,20 @@
           <li>
             <a href="maizeAndBlueCupboard.html">Maize & Blue Cupboard</a>
           </li>
-          <li>
+          <li class="target">
             <a href="mCenterForTheEducationOfWomen.html"
               >Center For The Education Of Women</a
             >
           </li>
         </ul>
       </nav>
+      
+    </header>
+    <main id="main" tabindex="-1">
       <h1>No matter where you’re from, you belong here.</h1>
       <h2>U-M CEW+</h2>
       <p>Potential Made Possible</p>
       <a href="https://www.cew.umich.edu/about/">LEARN MORE </a>
-    </header>
-    <main>
       <section>
         <h2>Center for the Education of Women +</h2>
         <p>
@@ -81,11 +85,19 @@
       />
     </main>
     <footer>
-      <img src="images/mCEWlogo.png" alt="M CEW+ Logo" />
-      <p>
-        CEW+ (Center for the Education of Women+) at the University of Michigan
-        330 E. Liberty Street, Ann Arbor, MI 48104
-      </p>
+      <img src="images/u-m_logo-horizontal-hex-reversed.png" alt=" UM Logo" />
+      <ul class="sl-links">
+        <li><a rel="noopener" href="https://studentlife.umich.edu/accessib">Web Accessibility Statement</a>
+        </li>
+        <li><a rel="noopener"
+            href="https://hr.umich.edu/working-u-m/workplace-improvement/office-institutional-equity/nondiscrimination-policy-notice">Non-Discrimination
+            Policy</a>
+        </li>
+        <li><a rel="noopener" href="https://umich.edu/">U–M Gateway</a>
+          <p></p>
+        </li>
+      </ul>
+      <p>© 2024 The Regents of the University of Michigan</p>
     </footer>
-  </body>
-</html>
+    </body>
+    </html>
