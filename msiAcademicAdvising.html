@@ -12,13 +12,26 @@
       <div class="skip">
         <a href="#main" tabindex="0">Skip to Main Content</a>
       </div>
-      <img
-        src="images/u-m_logo-horizontal-hex-reversed.png" class="centered-image" alt=" UM Logo"
-      />
+      <div id="logo">
+        <img
+          src="images/u-m_logo-horizontal-hex-reversed.png"
+          class="centered-image"
+          alt="UM Logo"
+        />
+        <div id="menu">
+          <img
+            src="images/chevron.svg"
+            alt="chevron-down"
+            class="chevron-icon"
+          />
+        </div>
+      </div>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li class="target"><a href="msiAcademicAdvising.html">MSI Academic Advising</a></li>
+          <li class="target">
+            <a href="msiAcademicAdvising.html">MSI Academic Advising</a>
+          </li>
           <li>
             <a href="maizeAndBlueCupboard.html">Maize & Blue Cupboard</a>
           </li>
@@ -29,74 +42,106 @@
           </li>
         </ul>
       </nav>
-      
     </header>
     <main id="main" tabindex="-1">
       <h1>MSI Academic Advising</h1>
-      <p>
-        Welcome! This site contains information about academic advising,
-        academic planning, and student support resources for students in the
-        Master of Science in Information (MSI) Program.
-      </p>
-      <figure>
-        <img src="images/UMSI_MHIClassroom_02202023_16.jpg" alt="Advising team helping out the students." />
-      </figure>
+      <div class="two-columns">
+        <p>
+          Welcome! This site contains information about academic advising,
+          academic planning, and student support resources for students in the
+          Master of Science in Information (MSI) Program.
+        </p>
+        <figure>
+          <img
+            src="images/UMSI_MHIClassroom_02202023_16.jpg"
+            alt="Advising team helping out the students."
+          />
+        </figure>
+      </div>
       <section>
         <h2>Content Areas</h2>
         <ul class="grid-container">
           <li>
             <a
               href="https://sites.google.com/umich.edu/msiacademicadvising/fall-2024-important-dates"
-              > <img src="images/calendar.png" alt="Important Dates" /> Fall 2024 Important Dates</a
+            >
+              <img src="images/calendar.png" alt="Important Dates" /> Fall 2024
+              Important Dates</a
             >
           </li>
           <li>
             <a
               href="https://sites.google.com/umich.edu/msiacademicadvising/academic-advising"
-              > <img src="images/advice.png" alt="Important Dates" /> Academic Advising</a
+            >
+              <img src="images/advice.png" alt="Important Dates" /> Academic
+              Advising</a
             >
           </li>
           <li>
             <a
               href="https://sites.google.com/umich.edu/msiacademicadvising/msi-degree-requirements"
-              > <img src="images/checklist.png" alt="Important Dates" /> MSI Degree Requirements</a
+            >
+              <img src="images/checklist.png" alt="Important Dates" /> MSI
+              Degree Requirements</a
             >
           </li>
           <li>
             <a
               href="https://sites.google.com/umich.edu/msiacademicadvising/degree-progress-registration"
-              > <img src="images/success.png" alt="Important Dates" /> Degree Progress & Registration</a
+            >
+              <img src="images/success.png" alt="Important Dates" /> Degree
+              Progress & Registration</a
             >
           </li>
           <li>
             <a
               href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources"
-              > <img src="images/human.png" alt="Important Dates" /> Student Support Resources</a
+            >
+              <img src="images/human.png" alt="Important Dates" /> Student
+              Support Resources</a
             >
           </li>
           <li>
             <a
               href="https://sites.google.com/umich.edu/msiacademicadvising/academic-success-and-tutoring"
-              > <img src="images/tutor.png" alt="Important Dates" /> Academic Success and Tutoring</a
+            >
+              <img src="images/tutor.png" alt="Important Dates" /> Academic
+              Success and Tutoring</a
             >
           </li>
         </ul>
       </section>
     </main>
     <footer>
-      <img src="images/u-m_logo-horizontal-hex-reversed.png" class="centered-image" alt=" UM Logo" />
+      <img
+        src="images/u-m_logo-horizontal-hex-reversed.png"
+        class="centered-image"
+        alt=" UM Logo"
+      />
       <ul class="sl-links">
-        <li><a rel="noopener" href="https://studentlife.umich.edu/accessib">Web Accessibility Statement</a>
+        <li>
+          <a rel="noopener" href="https://studentlife.umich.edu/accessib"
+            >Web Accessibility Statement</a
+          >
         </li>
-        <li><a rel="noopener"
-            href="https://hr.umich.edu/working-u-m/workplace-improvement/office-institutional-equity/nondiscrimination-policy-notice">Non-Discrimination
-            Policy</a>
+        <li>
+          <a
+            rel="noopener"
+            href="https://hr.umich.edu/working-u-m/workplace-improvement/office-institutional-equity/nondiscrimination-policy-notice"
+            >Non-Discrimination Policy</a
+          >
         </li>
-        <li><a rel="noopener" href="https://umich.edu/">U–M Gateway</a>
+        <li>
+          <a rel="noopener" href="https://umich.edu/">U–M Gateway</a>
           <p></p>
         </li>
       </ul>
-      <p>© 2024 The Regents of the University of Michigan</p>
+      <p>
+        © <span id="current-year"></span> The Regents of the University of
+        Michigan
+      </p>
     </footer>
-    </body>
-    </html>
+  </body>
+  <script type="text/javascript" src="scripts/menu.js"></script>
+  <script type="text/javascript" src="scripts/currentYear.js"></script>
+</html>

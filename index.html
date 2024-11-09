@@ -12,9 +12,20 @@
       <div class="skip">
         <a href="#main" tabindex="0">Skip to Main Content</a>
       </div>
-      <img
-        src="images/u-m_logo-horizontal-hex-reversed.png" class="centered-image" alt=" UM Logo"
-      />
+      <div id="logo">
+        <img
+          src="images/u-m_logo-horizontal-hex-reversed.png"
+          class="centered-image"
+          alt="UM Logo"
+        />
+        <div id="menu">
+          <img
+            src="images/chevron.svg"
+            alt="chevron-down"
+            class="chevron-icon"
+          />
+        </div>
+      </div>
       <nav>
         <ul>
           <li class="target"><a href="index.html">Home</a></li>
@@ -57,32 +68,36 @@
         <ul>
           <li>
             <h3>University Health Service (UHS)</h3>
-            <figure>
-              <img
-                src="images/UHS.jpg"
-                alt="University Health Services building"
-              />
-              <figcaption>University Health Services Building</figcaption>
-            </figure>
-            <p>
-              University Health Service (UHS): Access comprehensive medical
-              care, including routine check-ups, vaccinations, and specialist
-              referrals.
-            </p>
+            <div class="two-columns row-reverse">
+              <figure>
+                <img
+                  src="images/UHS.jpg"
+                  alt="University Health Services building"
+                />
+                <figcaption>University Health Services Building</figcaption>
+              </figure>
+              <p>
+                University Health Service (UHS): Access comprehensive medical
+                care, including routine check-ups, vaccinations, and specialist
+                referrals.
+              </p>
+            </div>
           </li>
           <li>
             <h3>Recreational Sports</h3>
-            <figure>
-              <img
-                src="images/UMSI_CampusFall_UMSIBackpack_02.jpg"
-                alt="A student wears a UMSI backpack in fall on the drag."
-              />
-              <figcaption>UMSI out in the fall!</figcaption>
-            </figure>
-            <p>
-              Participate in various fitness programs, sports clubs, and use of
-              gym facilities to stay active and healthy.
-            </p>
+            <div class="two-columns row-reverse">
+              <figure>
+                <img
+                  src="images/UMSI_CampusFall_UMSIBackpack_02.jpg"
+                  alt="A student wears a UMSI backpack in fall on the drag."
+                />
+                <figcaption>UMSI out in the fall!</figcaption>
+              </figure>
+              <p>
+                Participate in various fitness programs, sports clubs, and use
+                of gym facilities to stay active and healthy.
+              </p>
+            </div>
           </li>
         </ul>
       </section>
@@ -164,21 +179,37 @@
       </section>
       <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
-  </main>
+    </main>
     <footer>
-      <img src="images/u-m_logo-horizontal-hex-reversed.png" class="centered-image" alt=" UM Logo" />
+      <img
+        src="images/u-m_logo-horizontal-hex-reversed.png"
+        class="centered-image"
+        alt=" UM Logo"
+      />
       <ul>
-        <li><a rel="noopener" href="https://studentlife.umich.edu/accessib">Web Accessibility Statement</a>
+        <li>
+          <a rel="noopener" href="https://studentlife.umich.edu/accessib"
+            >Web Accessibility Statement</a
+          >
         </li>
-        <li><a rel="noopener"
-            href="https://hr.umich.edu/working-u-m/workplace-improvement/office-institutional-equity/nondiscrimination-policy-notice">Non-Discrimination
-            Policy</a>
+        <li>
+          <a
+            rel="noopener"
+            href="https://hr.umich.edu/working-u-m/workplace-improvement/office-institutional-equity/nondiscrimination-policy-notice"
+            >Non-Discrimination Policy</a
+          >
         </li>
-        <li><a rel="noopener" href="https://umich.edu/">U–M Gateway</a>
+        <li>
+          <a rel="noopener" href="https://umich.edu/">U–M Gateway</a>
           <p></p>
         </li>
       </ul>
-      <p>© 2024 The Regents of the University of Michigan</p>
+      <p>
+        © <span id="current-year"></span> The Regents of the University of
+        Michigan
+      </p>
     </footer>
   </body>
+  <script type="text/javascript" src="scripts/menu.js"></script>
+  <script type="text/javascript" src="scripts/currentYear.js"></script>
 </html>

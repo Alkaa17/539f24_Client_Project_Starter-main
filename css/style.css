@@ -18,6 +18,11 @@ html {
 }
 
 nav {
+  display: none;
+}
+
+nav.visible {
+  display: block;
   background-color: #ffcb05;
   padding: 1rem;
 }
@@ -111,7 +116,6 @@ ul {
 
 iframe {
   width: 100%;
-  height: 100%;
   display: block;
   margin: 0 auto;
   padding-bottom: 10px;
@@ -228,4 +232,74 @@ a img {
     flex-direction: row;
     justify-content: space-between;
   }
+}
+
+/* Menu CSS */
+#menu {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chevron-icon {
+  width: 100%;
+  height: 100%;
+  filter: invert(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+#menu.open .chevron-icon {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 768px) {
+  #menu {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    background-color: #ffcb05;
+    padding: 1rem;
+  }
+
+  .two-columns {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .two-columns figure {
+    flex: 1;
+    margin: 0 20px;
+  }
+
+  .two-columns p,
+  div {
+    flex: 1;
+  }
+
+  #donate-image {
+    margin-top: 2rem;
+  }
+
+  .grid-container {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+  }
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
 }
