@@ -98,6 +98,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f0f0f0;
+  /* Fixed floating footer to bottom of the page */
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -107,6 +108,7 @@ p {
   font-family: Arial, sans-serif;
   align-content: center;
   padding: 0 px 10px;
+  line-height: 1.7;
 }
 
 p,
@@ -241,8 +243,9 @@ a img {
 /* Menu CSS */
 #menu {
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
+  padding: 10px;
   position: relative;
   z-index: 2;
   display: flex;
