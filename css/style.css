@@ -89,6 +89,7 @@ main {
   padding: 20px;
   margin: 2rem auto;
   width: 80%;
+  flex: 1;
 }
 
 body {
@@ -97,6 +98,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f0f0f0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 p {
@@ -302,4 +306,8 @@ a img {
 
 .row-reverse {
   flex-direction: row-reverse;
+}
+
+#text-404 {
+  text-align: center;
 }
